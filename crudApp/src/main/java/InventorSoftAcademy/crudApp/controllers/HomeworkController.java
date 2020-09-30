@@ -19,9 +19,9 @@ public class HomeworkController {
     }
     @GetMapping("/homework-config")
     public User greetingWithConfig(@RequestParam(required = false, defaultValue = "52") Long id,
-                               @RequestParam(required = false, defaultValue = "Ivan") String firstName,
-                               @RequestParam(required = false, defaultValue = "Ivanov") String lastName,
-                               @RequestParam(required = false, defaultValue = "Ivanov@gmail.com") String email) {
+                                   @RequestParam(required = false, defaultValue = "Ivan") String firstName,
+                                   @RequestParam(required = false, defaultValue = "Ivanov") String lastName,
+                                   @RequestParam(required = false, defaultValue = "Ivanov@gmail.com") String email) {
         return new User(id, firstName, lastName, email);
     }
 }
